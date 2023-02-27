@@ -6,11 +6,11 @@ public class Max {
     }
 
     public static int max(int left, int right, int up) {
-        return up > max(left, right) ? up : max(left, right);
+        return max(up, max(left, right));
     }
 
     public static int max(int left, int right, int up, int down) {
-        return down > max(left, right, up) ? down : max(left, right, up);
+        return max(down, max(left, right, up));
     }
 
     public static int summation(int first, int second) {
