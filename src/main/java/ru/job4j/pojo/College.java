@@ -6,6 +6,8 @@ public class College {
         student.setName("Gusev Alexey Vyacheslavovich");
         student.setGroup("Java");
         student.setReceiptDate("02.01.2023.");
-        System.out.println("ФИО: " + student.getName() + ", группа: " + student.getGroup() + ", дата зачисления: " + student.getReceiptDate());
+        System.out.println("ФИО: " + student.getName()
+                            + ", группа: " + student.getGroup()
+                            + ", дата зачисления: " + student.getReceiptDate());
     }
 }
