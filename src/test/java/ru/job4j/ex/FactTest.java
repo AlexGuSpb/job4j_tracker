@@ -15,7 +15,7 @@ class FactTest {
                 () -> {
                     one.calc(-1);
                 });
-        assertThat(exception.getMessage()).isEqualTo("N could not be less than 0.");
+        assertThat(exception.getMessage()).isEqualTo("N could not be less than 0");
     }
 
     @Test
