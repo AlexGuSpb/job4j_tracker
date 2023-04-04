@@ -45,10 +45,10 @@ public class ValidateInputTest {
                 new String[] {"1", "2", "3", "4"}
         );
         ValidateInput input = new ValidateInput(out, in);
-        int selected = 0;
-        for (int i = 0; i < 4; i++) {
-            selected = input.askInt("Enter menu:");
-        }
+        int selected = input.askInt("Enter menu:");
+        selected = input.askInt("Enter menu:");
+        selected = input.askInt("Enter menu:");
+        selected = input.askInt("Enter menu:");
         assertThat(selected).isEqualTo(4);
     }
 }
